@@ -6,11 +6,18 @@ import router from './router'
 import "@/element/index"
 
 // axios
+import "@/api/index"
 
+// normalize.css
+import "normalize.css"
+import "@/styles/global.less"
+
+// fontSize
+import "@/assets/fonts/iconfont.css"
 
 Vue.config.productionTip = false
 
 new Vue({
-  router,
-  render: h => h(App)
+    router,
+    render: h => h(App)
 }).$mount('#app')
