@@ -21,7 +21,7 @@
         </template>
 
         <!--   二级菜单模板   -->
-        <el-menu-item v-for="objChi in obj.children" :index="'/'+objChi.path">
+        <el-menu-item v-for="objChi in obj.children" :key="objChi.id" :index="'/'+objChi.path">
           <i :class="iconChildrenList[objChi.id]" class="icon-style"></i>
           <span slot="title">{{ objChi.authName }}</span>
         </el-menu-item>

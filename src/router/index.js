@@ -24,17 +24,18 @@ const routes = [
                 name: 'Welcome',
                 component: () => import('@/views/home/welcome')
             },
-            
             {
-                path: "*",
-                component: () => import('@/views/error/index')
-            }
+                path: '/users',
+                name: 'Users',
+                component: () => import('@/views/users/index')
+            },
         ]
     },
 ]
 
 const router = new VueRouter({
-    routes
+    routes,
+    mode: "history"
 })
 
 //挂载路由导航守卫
