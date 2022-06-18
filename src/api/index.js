@@ -10,6 +10,8 @@ import {
     usersModify,
     usersSubmit
 } from "@/api/Users"
+import {editRoles, permissionsRoles, removeRoles, removeTagRoles, rights, roles} from '@/api/Roles'
+
 /*
  * Login 请求
  */
@@ -32,4 +34,15 @@ export const usersSubmitAPI = usersSubmit
 export const usersDeleteAPI = usersDelete
 export const editPermissionsAPI = editPermissions
 export const showPermissionsAPI = showPermissions
+
+/*
+* Rights 请求
+*/
+export const rightsAPI = rights
+export const rolesAPI = roles
+export const editRolesAPI = editRoles
+export const removeRolesAPI = removeRoles
+export const permissionsRolesAPI = permissionsRoles
+export const removeTagRolesAPI = removeTagRoles
+
 

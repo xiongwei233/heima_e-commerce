@@ -1,5 +1,5 @@
 <template>
-  <el-container class="container">
+  <el-container>
     <el-header class="header_style">
       <div class="header_left">
         <img alt="" src="../../assets/logo.png">
@@ -24,7 +24,9 @@
     </el-header>
     <el-container>
       <home-menu></home-menu>
-      <router-view></router-view>
+      <el-main>
+        <router-view></router-view>
+      </el-main>
     </el-container>
   </el-container>
 </template>
@@ -47,8 +49,10 @@ export default {
 </script>
 
 <style lang="less" scoped>
-.container {
+.el-container {
   height: 100%;
+  overflow: auto;
+
 
   .header_style {
     background-color: white;
