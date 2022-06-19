@@ -18,8 +18,6 @@
             <el-tag v-else type="warning">三级</el-tag>
           </template>
         </el-table-column>
-
-
       </el-table>
     </el-card>
   </div>

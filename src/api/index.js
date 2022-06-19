@@ -11,6 +11,7 @@ import {
     usersSubmit
 } from "@/api/Users"
 import {editRoles, permissionsRoles, removeRoles, removeTagRoles, rights, roles} from '@/api/Roles'
+import {goodsList, goodsListId, goodsListIdDelete, goodsListIdPut} from '@/api/Products'
 
 /*
  * Login 请求
@@ -45,4 +46,11 @@ export const removeRolesAPI = removeRoles
 export const permissionsRolesAPI = permissionsRoles
 export const removeTagRolesAPI = removeTagRoles
 
+/*
+* Products 请求
+*/
+export const goodsListAPI = goodsList
+export const goodsListIdAPI = goodsListId
+export const goodsListIdPutAPI = goodsListIdPut
+export const goodsListIdDeleteAPI = goodsListIdDelete
 
