@@ -12,6 +12,7 @@ import {
 } from "@/api/Users"
 import {editRoles, permissionsRoles, removeRoles, removeTagRoles, rights, roles} from '@/api/Roles'
 import {goodsList, goodsListId, goodsListIdDelete, goodsListIdPut} from '@/api/Products'
+import {addCategories, categories, categoriesId, deleteCategories, editCategories} from '@/api/categories'
 
 /*
  * Login 请求
@@ -53,4 +54,15 @@ export const goodsListAPI = goodsList
 export const goodsListIdAPI = goodsListId
 export const goodsListIdPutAPI = goodsListIdPut
 export const goodsListIdDeleteAPI = goodsListIdDelete
+
+
+/*
+* Categories 请求
+*/
+export const categoriesAPI = categories
+export const editCategoriesAPI = editCategories
+export const deleteCategoriesAPI = deleteCategories
+export const categoriesIdAPI = categoriesId
+export const addCategoriesAPI = addCategories
+
 

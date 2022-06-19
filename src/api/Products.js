@@ -26,7 +26,6 @@ export const goodsListIdPut = (id, data) => {
 }
 
 // 1.8.5. 删除商品
-
 export const goodsListIdDelete = id => {
     return request({
         url: `/goods/${id}`,
