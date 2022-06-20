@@ -1,6 +1,6 @@
 // 文件名-尽量和模块页面文件名统一（方便查找)
 import request from '@/utils/request'
-
+// 1.6.1. 商品分类数据列表
 export const categories = params => {
     return request({
         url: "/categories",

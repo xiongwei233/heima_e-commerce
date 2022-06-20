@@ -32,3 +32,21 @@ export const goodsListIdDelete = id => {
         method: "DELETE",
     })
 }
+
+// 1.7.1. 参数列表
+export const categoriesAttrList = (id, params) => {
+    return request({
+        url: `categories/${id}/attributes`,
+        method: "GET",
+        params
+    })
+}
+// 1.7.1. 参数列表
+export const addProducts = data => {
+    return request({
+        url: `goods`,
+        method: "POST",
+        data
+    })
+}
+

@@ -42,13 +42,23 @@ const routes = [
             {
                 path: '/goods',
                 name: 'Goods',
-                component: () => import('@/views/products/goods')
+                component: () => import('@/views/products/goods'),
+            },
+            {
+                path: '/goods/add',
+                name: 'Add',
+                component: () => import('@/views/products/add'),
             },
             {
                 path: '/categories',
                 name: 'Categories',
                 component: () => import('@/views/products/categories')
             },
+            {
+                path: '*',
+                name: 'Error',
+                component: () => import('@/views/error/index')
+            }
         ]
     },
 ]

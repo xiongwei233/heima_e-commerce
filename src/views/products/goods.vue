@@ -165,7 +165,7 @@ export default {
     },
     // 添加商品
     addProducts() {
-
+      this.$router.push("/goods/add")
     },
     // 修改商品
     async editGoods(goods_id) {
@@ -214,5 +214,4 @@ export default {
 </script>
 
 <style scoped>
-
 </style>

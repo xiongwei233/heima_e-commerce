@@ -11,7 +11,14 @@ import {
     usersSubmit
 } from "@/api/Users"
 import {editRoles, permissionsRoles, removeRoles, removeTagRoles, rights, roles} from '@/api/Roles'
-import {goodsList, goodsListId, goodsListIdDelete, goodsListIdPut} from '@/api/Products'
+import {
+    addProducts,
+    categoriesAttrList,
+    goodsList,
+    goodsListId,
+    goodsListIdDelete,
+    goodsListIdPut
+} from '@/api/Products'
 import {addCategories, categories, categoriesId, deleteCategories, editCategories} from '@/api/categories'
 
 /*
@@ -54,6 +61,8 @@ export const goodsListAPI = goodsList
 export const goodsListIdAPI = goodsListId
 export const goodsListIdPutAPI = goodsListIdPut
 export const goodsListIdDeleteAPI = goodsListIdDelete
+export const categoriesAttrListAPI = categoriesAttrList
+export const addProductsAPI = addProducts
 
 
 /*
