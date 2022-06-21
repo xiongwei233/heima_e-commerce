@@ -21,6 +21,7 @@ import {
 } from '@/api/Products'
 import {addCategories, categories, categoriesId, deleteCategories, editCategories} from '@/api/categories'
 import {addAttributes, deleteAttributes, editAttributes} from '@/api/params'
+import {editOrdersList, getOrdersList, showOrdersList} from '@/api/orders'
 
 /*
  * Login 请求
@@ -81,3 +82,12 @@ export const addCategoriesAPI = addCategories
 export const addAttributesAPI = addAttributes
 export const editAttributesAPI = editAttributes
 export const deleteAttributesAPI = deleteAttributes
+
+
+/*
+* Orders 请求
+*/
+export const getOrdersListAPI = getOrdersList
+export const editOrdersListAPI = editOrdersList
+export const showOrdersListAPI = showOrdersList
+

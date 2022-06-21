@@ -60,6 +60,16 @@ const routes = [
                 component: () => import('@/views/products/params')
             },
             {
+                path: '/orders',
+                name: 'Orders',
+                component: () => import('@/views/orders/')
+            },
+            {
+                path: '/reports',
+                name: 'Reports',
+                component: () => import('@/views/reports/')
+            },
+            {
                 path: '*',
                 name: 'Error',
                 component: () => import('@/views/error/index')
