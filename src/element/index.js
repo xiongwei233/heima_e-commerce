@@ -82,6 +82,5 @@ Vue.use(TabPane)
 Vue.use(Checkbox)
 Vue.use(CheckboxGroup)
 Vue.use(Upload)
-
 Vue.prototype.$message = Message
 Vue.prototype.$confirm = MessageBox.confirm

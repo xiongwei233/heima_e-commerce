@@ -55,6 +55,11 @@ const routes = [
                 component: () => import('@/views/products/categories')
             },
             {
+                path: '/params',
+                name: 'params',
+                component: () => import('@/views/products/params')
+            },
+            {
                 path: '*',
                 name: 'Error',
                 component: () => import('@/views/error/index')
